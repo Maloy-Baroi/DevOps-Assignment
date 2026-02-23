@@ -1,0 +1,49 @@
+DevOps Assignment – Feature Update Notes
+=========================================
+Date: 2026-02-23
+
+## What was done in this feature branch:
+
+1. Updated README.md with:
+   - Git workflow summary table (branches and their purposes)
+   - Commit convention guide
+   - Detailed notes on Todo App deployment (Part 6)
+   - Live deployment URL placeholder
+
+2. Added this notes.txt file with meaningful content
+
+## Key Learnings from this Assignment:
+
+### Git Basics
+- `git init`        → Initialize a local repository
+- `git add .`       → Stage all changes
+- `git commit -m`   → Commit with a message
+- `git branch`      → List or create branches
+- `git checkout -b` → Create and switch to a new branch
+- `git merge`       → Merge a branch into the current one
+- `git push`        → Push commits to remote
+- `git pull`        → Fetch and merge from remote
+- `git clone`       → Copy a remote repo locally
+
+### GitHub Concepts
+- **Repository**: Remote storage for your codebase
+- **Branch**: Isolated line of development
+- **Pull Request (PR)**: Propose changes from one branch to another
+- **Merge**: Integrate changes from a PR into the target branch
+- **Fork**: Copy of another user's repository under your account
+
+### Deployment (Render)
+- Render is a free cloud hosting platform
+- Supports Python/Django, Node.js, and more
+- Uses `render.yaml` for Infrastructure-as-Code deployment
+- Environment variables manage secrets (SECRET_KEY, DEBUG)
+- WhiteNoise serves static files without a separate CDN
+
+## Todo App Tech Stack:
+- Django 5.x (Python web framework)
+- SQLite (development database)
+- Gunicorn (production WSGI server)
+- WhiteNoise (static file serving)
+- Tailwind CSS (UI styling via CDN)
+- Render (cloud deployment platform)
+
